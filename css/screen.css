@@ -1,0 +1,83 @@
+body{
+  background-image:url('../media/bluegrid.svg');
+  background-position:top;
+  background-color:white;
+  font-family: Arial, sans-serif;
+  padding: 50px;
+}
+.genCont{
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  width:60%;
+}
+.fieldLabel{
+  padding:5px;
+  font-size:1.3em
+}
+h1{
+  text-align: center;
+  font-size:2.4em;
+  font-family:'Times New Roman',serif;
+  padding: 20px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.formSpec{
+    text-align: center;
+    flex-direction:column;
+}
+
+label{
+  display:flex;
+  flex-direction:column;
+
+}
+input{
+  width:100%;
+  border-radius:5px;
+  font-size:1.2em;
+}
+button{
+  width:100%;
+  padding:10px; 
+  font-size:1.5em;
+  text-align:center;
+  
+}
+button:hover{
+    
+  transition: 0.25s;
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 5);
+
+}
+
+@media only screen and (min-width: 480px){
+  body{
+    background-image:url('../media/whitegrid.svg');
+    background-color:red;
+
+  }
+  h1{
+    font-size:2.5em;
+    padding: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  body{
+    background-image:url('../media/blackgrid.svg');
+    background-color:white;
+  }
+  h1{
+    font-size:3em;
+    padding: 10px;
+  }
+}
