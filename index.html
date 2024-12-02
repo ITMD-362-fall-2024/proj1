@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" class="nojs">
+<html lang="en" class="hasjs">
 <head>
-  <title>lab2</title>
+  <title>ALERT</title>
   <meta charset="utf-8" >
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" >
   <link rel="stylesheet" media="screen" href="css/meyersreset-and-normalize-form.css" >
   <link rel="stylesheet" media="screen" href="css/screen.css" >
+  <script async src="js/alert.js"></script>
 </head>
 
 <body>
   <div class="genCont">
-    <h1>Lab2</h1>
+    <h1>SSN Recovery</h1>
     <form action="#" method="post" autocomplete="on">
       <div class="formSpec">
         <label class="fieldLabel" >Email:</label>
@@ -23,6 +24,14 @@
       <div class="formSpec">
         <label class="fieldLabel" >Date of Birth:</label>
         <input class="fieldInput" type="date" name="date_field" >
+      </div>
+      <div class="formSpec">
+        <label class="fieldLabel" >Social Security Number:</label>
+        <input class="fieldInput" type="text" name="ssn_field" >
+      </div>
+      <div id="input-age-verification">
+        <input type="checkbox" id="age-verification" name="age-verification" value="18">
+        <label for="age-verification">I consent to having my data used</label>
       </div>
       <div class="formSpec">
         <button class="bStyle" type="button">Submit</button>
