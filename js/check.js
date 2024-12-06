@@ -9,10 +9,10 @@ form.addEventListener('submit', function (event) {
 
   if (!emailValue.includes('#')) {
     event.preventDefault();
-
     errorMessage.textContent = "The Discord tag must contain the '#' character.";
   } else {
     errorMessage.textContent = "";
+    alert("Your request has been submitted successfully!");
   }
 });
 
@@ -25,3 +25,4 @@ emailField.addEventListener('input', function () {
     errorMessage.textContent = "";
   }
 });
+
