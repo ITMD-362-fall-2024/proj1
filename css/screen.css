@@ -3,7 +3,7 @@ body{
   background-position:top;
   background-color:white;
   font-family: Arial, sans-serif;
-  padding: 50px;
+  padding: 2em;
   overflow-x: hidden;
 }
 .genCont{
@@ -15,7 +15,8 @@ body{
 }
 .fieldLabel{
   padding:5px;
-  font-size:1.3em
+  font-size:1.3em;
+  text-align: left;
 }
 #plus{
   font-size:3em;
@@ -35,7 +36,7 @@ form{
   gap: 1.5rem;
 }
 .formSpec{
-    text-align: left;
+    text-align: center;
     flex-direction:column;
 }
 
@@ -59,11 +60,10 @@ button{
 button:hover{
     
   transition: 0.25s;
-  background-color: #000;
+  background-color: #666;
   color: #fff;
   border-radius: 20px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 5);
-
 }
 
 @media only screen and (min-width: 480px){
