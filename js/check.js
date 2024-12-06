@@ -1,5 +1,5 @@
 const form = document.querySelector('form');
-const emailField = document.querySelector('input[name="email_field"]');
+const emailField = document.querySelector('input[name="email_field"]');field name
 const errorMessage = document.createElement('div');
 errorMessage.style.color = 'red';
 emailField.parentNode.appendChild(errorMessage);
@@ -25,4 +25,3 @@ emailField.addEventListener('input', function () {
     errorMessage.textContent = "";
   }
 });
-

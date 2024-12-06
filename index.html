@@ -13,24 +13,24 @@
   <div class="genCont">
     <h1 id="plus">[T]</h1>
     <h1>Template Request</h1>
-    <p>Request a template. Most correspondance will be through discord. Enter your discord tag, the image you want to be made into a template, and when it is due.</p>
-    <form action="#" method="post" autocomplete="on">
+    <p>Request a template. Most correspondance will be through discord. Enter your discord tag, the image you want to be made into a template, and when it is due.</p><form action="#" method="post" autocomplete="on">
+    <div class="formSpec">
+      <label for="discord_tag" class="fieldLabel">Discord:</label>
+        <input class="fieldInput" type="text" name="email_field" id="discord_tag" placeholder="Enter Discord Tag">
+    </div>
+    <div class="formSpec">
+      <label for="image_base" class="fieldLabel">Image base:</label>
+      <input class="fieldInput" type="file" name="file_field" id="image_base" placeholder="Upload file">
+    </div>
       <div class="formSpec">
-        <label class="fieldLabel" for="email_field">Discord:</label>
-        <input class="fieldInput" type="email" id="email_field" name="email_field" placeholder="Enter Discord Tag">
+        <label for="due_date" class="fieldLabel">Due by:</label>
+        <input class="fieldInput" type="date" name="date_field" id="due_date">
       </div>
-      <div class="formSpec">
-        <label class="fieldLabel" for="file_field">Image base:</label>
-        <input class="fieldInput" type="file" id="file_field" name="file_field" placeholder="Upload file">
-      </div>
-      <div class="formSpec">
-        <label class="fieldLabel" for="date_field">Due by:</label>
-        <input class="fieldInput" type="date" id="date_field" name="date_field">
-      </div>
-      <div class="formSpec">
-        <button class="bStyle" type="submit">Submit Request</button>
-      </div>
-    </form>
+    <div class="formSpec">
+    <button class="bStyle" type="submit">Submit Request</button>
+  </div>
+</form>
+
   </div>
 </body>
 
