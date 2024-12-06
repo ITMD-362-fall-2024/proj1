@@ -1,4 +1,27 @@
-function init(){
-  alert("Has your Social Security Number been stolen in the past 5 months");
-}
-window.addEventListener('load', init);
+const form = document.querySelector('form');
+const emailField = document.querySelector('input[name="email_field"]');
+const errorMessage = document.createElement('div');
+errorMessage.style.color = 'red';
+emailField.parentNode.appendChild(errorMessage);
+
+form.addEventListener('submit', function (event) {
+  const emailValue = emailField.value;
+
+  if (!emailValue.includes('#')) {
+    event.preventDefault();
+
+    errorMessage.textContent = "The Discord tag must contain the '#' character.";
+  } else {
+    errorMessage.textContent = "";
+  }
+});
+
+emailField.addEventListener('input', function () {
+  const emailValue = emailField.value;
+
+  if (!emailValue.includes('#')) {
+    errorMessage.textContent = "The Discord tag must contain the '#' character.";
+  } else {
+    errorMessage.textContent = "";
+  }
+});
